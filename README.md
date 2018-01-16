@@ -25,16 +25,12 @@
       -   Array Link List Stack Queue 
    -  Linear Data Structure
       -   Tree Graph
-<<<<<<< HEAD
-## Algorithms คืออะไร 
-=======
-### Algorithms คืออะไร 
->>>>>>> dd204460438aed6fa1234890cb08c29c50d00585
+## Algorithms คืออะไร  
   กระบวนการ/ข้อตอน ในการเเก้ไขปัญหาให้ ให้บรรลุเป้าหมาย 
       - การทำงานมึจุดจบ เรียบง่ายคอมสามารถทำงานได้ ไม่กำกวม
   การอธิบาย Algorithms นั้นจะมีการนำเสนอเเบบ flow chart pseudo code หรือ เขียนอธิบายขั้นตอน
 ## การวิเคราะห์ Algorithms
-    ปัญหาหนึ่งปํญหาสามารถเเก้ด้วย Algorithms หลายเเบบได้ ดังนั้นจึงมึการวิเคราะห์ Algorithms เพื่อจะตรวจสอบว่า  Algorithms ไหนใช้เเก้ปัญหาได้มีประสิทธิภาพมากกว่า 
+   ปัญหาหนึ่งปํญหาสามารถเเก้ด้วย Algorithms หลายเเบบได้ ดังนั้นจึงมึการวิเคราะห์ Algorithms เพื่อจะตรวจสอบว่า  Algorithms ไหนใช้เเก้ปัญหาได้มีประสิทธิภาพมากกว่า 
   - การวิเคราะห์ Algorithms ที่เรียนใช้ class 
     - วเิคราะหด์ว้ย Time Complexity
       - หา units of time ด้วยการนับจำนวนคำสั่ง (instruction count) 
@@ -42,7 +38,7 @@
       - การหาฟังก์ชันการเติบโต (growth of function) ของ algorithm: T(n) จาก units of time 
       - การหา Big O 
 ## การวิเคราะห์ Algorithms  --  วิเคราะหอ์ย่างไร 
-    การวิเคราะห์ประสิทธิภาพการของ Algorithms  สามารถทำได้หลายเเบบ เช่น 
+   การวิเคราะห์ประสิทธิภาพการของ Algorithms  สามารถทำได้หลายเเบบ เช่น 
   - เวลาที่ใช้ในการประมวลผลข้อมูล
     - Time complexity 
   - พื้นที่ในการจัดเก็บข้อมลู 
@@ -53,8 +49,8 @@
 ### ดังนั้นจะกลาวถึงเฉพาะ  Time Complexity
    - units of time ทั้งเเบบ instruction count and operation count 
 ##  Time Complexity
-    uinit of time  จะนำไปสู่ Function การเติบโต T(n) เเล้วจะนำไปสู่ Big O 
-    การนับ uinit of time  ทำได้สอบเเบบคือ instruction เเละ operation
+   uinit of time  จะนำไปสู่ Function การเติบโต T(n) เเล้วจะนำไปสู่ Big O 
+   การนับ uinit of time  ทำได้สอบเเบบคือ instruction เเละ operation
 ## การนับ uinit of time เเบบ  instruction
    การนับเเบบ instruction จะนับจะเพราะส่วนที่เป็น คำส่ง 
 ```
