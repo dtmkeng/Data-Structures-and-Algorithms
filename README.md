@@ -25,7 +25,7 @@
       -   Array Link List Stack Queue 
    -  Linear Data Structure
       -   Tree Graph
-##### Algorithms คืออะไร 
+### Algorithms คืออะไร 
   กระบวนการ/ข้อตอน ในการเเก้ไขปัญหาให้ ให้บรรลุเป้าหมาย 
       - การทำงานมึจุดจบ เรียบง่ายคอมสามารถทำงานได้ ไม่กำกวม
   การอธิบาย Algorithms นั้นจะมีการนำเสนอเเบบ flow chart pseudo code หรือ เขียนอธิบายขั้นตอน
