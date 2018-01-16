@@ -13,21 +13,68 @@
 ## Data Structures คืออะไร 
    Data Structures คือประเภทข้อมูลที่มีการจัดเรียง เเล้วมีความความสัมพันธ์เเบบต่างๆ มีกฎข้อบังคับอย่างมีระบบ ข้อมูลอาจเป็นชนิดเดียวกันหรือต่างกันก็ได้  เช่น  array ,string 
     ในโปรเเกรมคอมพิวเตอร์โปรเเกรมหนึ่ง เราสามรถมองเเเยกออกได้ 2 ส่วน คือ Data Structures เเละ Algorithms  
-#####  Data Structures ที่ดี
+####  Data Structures ที่ดี
    -   Decomposed –– สามารถแยกเป็นส่วนหรือหน่วยย่อยได้
    -   Access –– มีวิธีการในการเข้าถึงหน่วยข้อมูล 
    -   Store –– มวีธิการในการจัดเก็บหน่วยข้อมูล
    -   Encapsulated ––  ควรปกปิดกระบวนการที่ซับซ้อนในการสร้าง หรือเข้าถึงหน่วยข้อมูล 
    -   Real world relation ––  สามารถสะท้อนความสัมพันธ์ข้อมูลกับ โลกของความเป็นจริงได้
    -   Easy to Design & Easy to Implement –– ง่ายในการออกแบบ และเขียนโปรแกรม
-##### ประเภทของ Data Strctures 
+#### ประเภทของ Data Strctures 
    -  Linear Data Structure
       -   Array Link List Stack Queue 
    -  Linear Data Structure
       -   Tree Graph
-##### Algorithms คืออะไร 
+## Algorithms คืออะไร 
   กระบวนการ/ข้อตอน ในการเเก้ไขปัญหาให้ ให้บรรลุเป้าหมาย 
       - การทำงานมึจุดจบ เรียบง่ายคอมสามารถทำงานได้ ไม่กำกวม
   การอธิบาย Algorithms นั้นจะมีการนำเสนอเเบบ flow chart pseudo code หรือ เขียนอธิบายขั้นตอน
+## การวิเคราะห์ Algorithms
+    ปัญหาหนึ่งปํญหาสามารถเเก้ด้วย Algorithms หลายเเบบได้ ดังนั้นจึงมึการวิเคราะห์ Algorithms เพื่อจะตรวจสอบว่า  Algorithms ไหนใช้เเก้ปัญหาได้มีประสิทธิภาพมากกว่า 
+  - การวิเคราะห์ Algorithms ที่เรียนใช้ class 
+    - วเิคราะหด์ว้ย Time Complexity
+      - หา units of time ด้วยการนับจำนวนคำสั่ง (instruction count) 
+      - หา units of time ด้วยการนับจำนวนตวัดำเนินการ (operation count) 
+      - การหาฟังก์ชันการเติบโต (growth of function) ของ algorithm: T(n) จาก units of time 
+      - การหา Big O 
+## การวิเคราะห์ Algorithms  --  วิเคราะหอ์ย่างไร 
+    การวิเคราะห์ประสิทธิภาพการของ Algorithms  สามารถทำได้หลายเเบบ เช่น 
+  - เวลาที่ใช้ในการประมวลผลข้อมูล
+    - Time complexity 
+  - พื้นที่ในการจัดเก็บข้อมลู 
+    - Space complexity 
+  * Time and  Space ยิ่งน้อยยิ่งดี 
+####  การวิเคราะห์ ด้วยเวลา(Time) เเละ เเละการใช้พื้นที่(Space)น้อยนั้น ทำได้ยาก !! ###
 
-    
+### ดังนั้นจะกลาวถึงเฉพาะ  Time Complexity
+   - units of time ทั้งเเบบ instruction count and operation count 
+##  Time Complexity
+    uinit of time  จะนำไปสู่ Function การเติบโต T(n) เเล้วจะนำไปสู่ Big O 
+    การนับ uinit of time  ทำได้สอบเเบบคือ instruction เเละ operation
+## การนับ uinit of time เเบบ  instruction
+   การนับเเบบ instruction จะนับจะเพราะส่วนที่เป็น คำส่ง 
+```
+  int num;  // ไม่นับ 
+  num = 0;  // 1  
+```
+### Ex1 
+  ```
+  int num,sum;      // ไม่นับ
+  num=sum=0;        // 1 
+  for(i=0;i<=n;i++) // 1+(n+2)+n+1 =  2n+3
+  {                 // ไม่นับ
+        num++;      // 2 คำสัง ทำ n Loop
+        sum+=num;   // = 2n+2
+  }                 // ไม่นับ
+  ```
+  * T(n)
+  ```
+  T(n) 2n+3+2n+2 = 4n+5 = O(T(n))=O(n)
+  ```
+## การนับ uinit of time เเบบ  operation
+   การนับเเบบ Operation จะนับจะเพราะส่วนที่เป็น operation +-*/ []
+```
+  int num,num1[];  // ไม่นับ 
+  num = 0;  // 1  
+  num=num1[0]; // 2 ; = and [] 
+```
