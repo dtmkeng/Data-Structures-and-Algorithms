@@ -71,10 +71,67 @@
   ```
   T(n) 2n+3+2n+2 = 4n+5 = O(T(n))=O(n)
   ```
+### Ex2 
+```
+int num =0;         // 1 
+int i =0;           // 1
+while(i<n){         // n+1
+    i+=i+1;         // สองคำสั่งทำ n+1 รอบ 2n+2
+    num+=i*2;       //
+}
+```
+* T(n)
+```
+T(n) 1+1+n+1+2n+2 = 3n+5 O(T(n)) = O(n)
+```
+### Ex3 
+```
+int num,i,j;        // ไม่นับ
+num=0;              // 1
+for(i=0;i<=n;i++){  // 1+n+1+n  = 2n+2
+  for(j=0;j<n;j++){   n*[2n+2] = 2n^2+2n
+     num+=i;        // 2 คำสั่ง ทำ n^2 รอบ = 2n^2
+     num++;         // 
+  }
+}
+```
+* T(n)
+```
+T(n) 1+2n+2+2n^2+2n+2n^2=4n^2+4n+3 = O(T(n))=O(n^2)
+```
 ## การนับ uinit of time เเบบ  operation
    การนับเเบบ Operation จะนับจะเพราะส่วนที่เป็น operation +-*/ []
 ```
-  int num,num1[];  // ไม่นับ 
-  num = 0;  // 1  
-  num=num1[0]; // 2 ; = and [] 
+  int num,num1[];   // ไม่นับ 
+  num = 0;          // 1  
+  num=num1[0];      // 2 ; = and [] 
+```
+### Ex1 
+```
+int num,sum;        // ไม่นับ
+  num=sum=0;        // 1 
+  for(i=0;i<=n;i++) // 1+(n+2)+n+1 =  2n+3
+  {                 // ไม่นับ
+        num++;      // 1 opreration ทำ n+1 รอบ n+1 รอบ
+        sum+=num;   // 2 opreration ทำ n+1 รอบ 2n+2
+  }                 // ไม่นับ
+```
+* T(n)
+```
+ 1+2n+3+n+1+2n+2=5n+7 = O(T(n))=O(n)
+```
+### Ex2 
+```
+int num,i,j;        // ไม่นับ
+num=0;              // 1
+for(i=0;i<=n;i++){  // 1+n+1+n  = 2n+2
+  for(j=0;j<n;j++){   n*[2n+2] = 2n^2+2n
+     num+=i;        // 2 opreration ทำ n^2 รอบ = 2n^2
+     num++;         // 1 opreration ทำ  n^2 รอบ
+  }
+}
+```
+* T(n)
+```
+T(n) 1+2n+2+2n^2+2n+2n^2+2n^2=5n^2+4n+3 = O(T(n))=O(n^2)
 ```
