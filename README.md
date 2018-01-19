@@ -136,4 +136,10 @@ for(i=0;i<=n;i++){  // 1+n+1+n  = 2n+2
 T(n) 1+2n+2+2n^2+2n+2n^2+2n^2=5n^2+4n+3 = O(T(n))=O(n^2)
 ```
 ## Sorting 
-การเรียนข้อมูล 
+* Selection Sort  
+* Insertion Sort 
+* Bubble Sort 
+* Merge Sort 
+* Quick Sort 
+* Heap Sort 
+* Radix Sort
