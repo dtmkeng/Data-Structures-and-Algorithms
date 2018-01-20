@@ -135,6 +135,19 @@ for(i=0;i<=n;i++){  // 1+n+1+n  = 2n+2
 ```
 T(n) 1+2n+2+2n^2+2n+2n^2+2n^2=5n^2+4n+3 = O(T(n))=O(n^2)
 ```
+## นิยามของ Big O
+```
+ให้ T(n) เเละ f(n) เป็นฟังก์ชั่นใดๆ
+T(n)=O(f(n)) ถ้ามีค่าคงที่ที่เป็นค่าบวก c เเละ n0(n ศูนย์)  ที่ทำให้
+T(n)<=c*f(n) เมือ n>=n0;
+```
+### Ex1 
+  T(n)=2n-4 ,f(n)=n
+  ต้องการหาว่า T(n)=O(f(n)) หรือไม
+  กำหนดให้ c=3 ,n0=1
+  2(1)-4<=3*(1) 
+  -2<=3 เป็นจริง
+  ดังนั้น ``` T(n)=O(n) ```
 ## Sorting 
 * Selection Sort  
 * Insertion Sort 
@@ -143,3 +156,11 @@ T(n) 1+2n+2+2n^2+2n+2n^2+2n^2=5n^2+4n+3 = O(T(n))=O(n^2)
 * Quick Sort 
 * Heap Sort 
 * Radix Sort
+
+###  Selection Sort     
+###  Insertion Sort 
+###  Bubble Sort
+###  Merge Sort 
+###  Quick So
+###  Heap Sort
+###  Radix Sort
