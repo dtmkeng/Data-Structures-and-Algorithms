@@ -160,10 +160,54 @@ T(n)<=c*f(n) เมือ n>=n0;
 
 ###  Selection Sort 
    Selection Sort เป็น Algorithm ในการเรียงข้อมูลเเบบหนึ่ง หลังการทำงาน จะค้นหาข้อมูลที่น้อยหรือมากที่สุดเเล้วนำมาเรียงไว้ทางด้ายช้ายมือของชุดช้อมูล 
+  ```c
+   void SeletionSort(int a[],int len){
+	    int pass,i,ind,temp;
+	for(pass=0;pass<len;pass++){
+		   ind=pass;
+	 for(i=pass+1;i<len;i++){
+		if(a[i]<a[ind]){
+			 swap(&a[i],&a[ind]);
+		    }
+		  }
+	  }
+  }
+  ```
 ###  Insertion Sort 
    Insertion Sort จะมีหลังการทำงานคือ เปรียบเทียบข้อมูลระหว่างคู่ เเล้วถ้าข้อมูลน้อยกว่าให้สลับข้อมูลมาไว้ทางซ้ายมือ 
+  ```c
+    void InserttionSort(int a[],int len){
+	    int i,j,key;
+	    for(i=1;i<len;i++){
+		    key =a[i];
+		    j=i-1;
+		    while(j>=0&&a[j]>key){
+			      a[j+1]=a[j];
+			      j--;
+		    }
+		      a[j+1]=key;
+	    }
+  }
+  ```
 ###  Bubble Sort
-   Bubble Sort  มีหลังการทำงาน คือ เปรียบเทียบข้อมูลจากทางขาวมือถ้าข้อมูลขาวมือมากกว่าด้านซ้ายมือจะสลับต่ำเเหน่งข้อมูลเเต่ถ้าขาวมือมากกว่าจะเอาไว้ทีเดิมเเล้วเทียบข้อมูลถัดไป    
+   Bubble Sort  มีหลังการทำงาน คือ เปรียบเทียบข้อมูลจากทางขาวมือถ้าข้อมูลขาวมือมากกว่าด้านซ้ายมือจะสลับต่ำเเหน่งข้อมูลเเต่ถ้าขาวมือมากกว่าจะเอาไว้ทีเดิมเเล้วเทียบข้อมูลถัดไป 
+   ```c 
+   void bubleSort(int a[],int len){
+	    int i,pass,temp,swapped; 
+	    for(pass=1;pass<len;pass++){
+		    swapped=0;
+		    for(i=0;i<len-pass;i++){
+		      if(a[i]>a[i+1]){
+			      swap(&a[i],&a[i+1]);
+			      swapped=1;
+		      }
+	    }
+	      if(!swapped)
+	 	      return;
+//	 printArray(a,len);
+      }
+    }
+   ```   
 ###  Merge Sort 
    Merge Sort จะเเยกข้อมูลออกเป็นกลุ่มเล็กที่สุดเเล้วค่อย รวมจากกลุ่มเล็กสุดโดยมีการเรียงในกลุ่มนั้น เเล้วรวมเป็นกลุ่มใหญ่เรื่อยๆ 
 ###  Quick Sort
