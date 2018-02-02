@@ -218,3 +218,35 @@ T(n)<=c*f(n) เมือ n>=n0;
     ทำให้เป็น complte binary 
 ###  Radix Sort
     เรียงจากตัวท้ายสุดเเล้วจัดกลุ่ม
+### Liner Search 
+  การทำงานจะไลหาจากข้อมูลทั้งมูล หมด
+  ```c
+  int lSearch(int a[],int len,int key){
+	int i;
+	for(i=0;i<len;i++){
+		if(a[i]==key)
+			return i;
+	   }
+	return -1;
+  }
+  ```
+### Binary Search 
+  จะทำการเรียงข้อมูลก่อนการค้นหา  มากไปน้อย หรือ น้อยไปมากก็ได้
+  ```c
+  int bSearch(int a[],int len,int key){
+	int left,right,mid;
+	left=0;
+	right=len-1;
+	mid=(left+right)/2;
+	while(left<=right){
+		if(a[mid]==key)
+			return mid;
+		else if(a[mid]<key)
+			left=mid+1;
+		else 
+			right=mid-1;
+		mid=(left+right)/2;
+	  }
+	return -1;
+  }
+  ```
